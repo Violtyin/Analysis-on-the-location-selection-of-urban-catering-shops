@@ -1,0 +1,12 @@
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import os
+import warnings
+warnings.filterwarnings('ignore')
+
+#(1) 加载数据
+os.chdir('D:\\工作\\数据分析学习\\数据分析师（网易）\\【代码+软件+课后答案】课程资料\\【非常重要】Python数据分析师微专业_课程资料\\CLASSDATA_ch06数据挖掘实战')
+df = pd.read_excel('上海餐饮数据.xlsx',sheetname = 0,header = 0)
+print('加载数据%i 条' %len(df))
+
